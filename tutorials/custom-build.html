@@ -21,6 +21,12 @@
       <li><code>./dist/handsontable.full.css</code></li>
       <li><code>./dist/handsontable.full.min.js</code></li>
       <li><code>./dist/handsontable.full.min.css</code></li>
+      <li><code>./dist/handsontable-pro.js</code></li>
+      <li><code>./dist/handsontable-pro.css</code></li>
+      <li><code>./dist/handsontable-pro.full.js</code></li>
+      <li><code>./dist/handsontable-pro.full.css</code></li>
+      <li><code>./dist/handsontable-pro.full.min.js</code></li>
+      <li><code>./dist/handsontable-pro.full.min.css</code></li>
       <li><code>./dist/languages/*</code></li>
     </ul>
     <p>More info about dist packages can be found <a href="https://github.com/handsontable/handsontable/blob/master/dist/README.md" target="_blank">here</a>.
@@ -39,9 +45,11 @@
           <li><code>npm run lint</code> - check if changes applied into source code are valid with <a href="https://github.com/handsontable/handsontable/blob/master/.eslintrc" target="_blank">our code style</a> (inspired by
             <a href="https://github.com/airbnb/javascript" target="_blank">Airbnb JavaScript Style</a>).</li>
           <li><code>npm run test:unit</code> - runs the test suite in node environment. It uses <a href="https://facebook.github.io/jest/" target="_blank">Jest</a> as a test runner.</li>
-          <li><code>npm run test:handsontable</code> - runs a single build of Handsontable CE followed by Jasmine test suite and executes in <a href="https://github.com/GoogleChrome/puppeteer" target="_blank">Puppeteer</a>.</li>
-          <li><code>npm run test:e2e</code> - runs a single build followed by Jasmine test suite and by using the generated bundle <code>/dist/handsontable.js</code> executes it in Puppeteer.</li>
-          <li><code>npm run test:production</code> - runs a single build followed by Jasmine test suite and by using generated minified bundle <code>/dist/handsontable.full.min.js</code> executes it in Puppeteer.</li>
+          <li><code>npm run test:types</code> - runs the tests which check if the code follows TypeScript definition.</li>
+          <li><code>npm run test:walkontable</code> - runs a single build of Walkontable (the Handsontable renderer engine) followed by Jasmine test suite and executes in <a href="https://github.com/GoogleChrome/puppeteer" target="_blank">Puppeteer</a>.</li>
+          <li><code>npm run test:e2e</code> - runs a single build of Handsontable followed by Jasmine test suite and by using the generated bundle <code>/dist/handsontable-pro.js</code> executes it in Puppeteer.</li>
+          <li><code>npm run test:e2e-ce</code> - runs a single build of Handsontable Community Edition followed by Jasmine test suite and by using the generated bundle <code>/dist/handsontable.js</code> executes it in Puppeteer.</li>
+          <li><code>npm run test:production</code> - runs a single build followed by Jasmine test suite and by using generated minified bundle <code>/dist/handsontable-pro.full.min.js</code> executes it in Puppeteer.</li>
         </ul>
       </li>
       <li>
@@ -56,7 +64,6 @@
         </ul>
       </li>
       <li><code>npm run watch</code> - watches for changes in source directory and runs a build when a change is observed. For faster rebuild when a change is observed, the watcher triggers the file-building task without minify.</li>
-      </li>
     </ul>
   </div>
   <div class="example-container clearfix" name="running">
