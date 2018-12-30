@@ -117,7 +117,7 @@
       invoke the original method and then perform other operations, specific to your editor.</p>
     <p><strong>Example</strong> - overriding common method</p>
     <pre>
-      <code class="lang-js">// CustomEditor is a class function, inheriting form BaseEditor
+      <code class="lang-js">// CustomEditor is a class function, inheriting from BaseEditor
 CustomEditor.prototype.prepare = function(row, col, prop, td, originalValue, cellProperties){
   // Invoke the original method...
   Handsontable.editors.BaseEditor.prototype.prepare.apply(this, arguments);
